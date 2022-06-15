@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: httpd
-          image: ubi8/httpd-24:latest
+          image: registry.redhat.io/ubi8/httpd-24:latest
           ports:
             - containerPort: 8080
