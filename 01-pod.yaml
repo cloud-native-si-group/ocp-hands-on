@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
     - name: httpd
-      image: registry.redhat.io/ubi8/httpd-24:latest
+      image: registry.redhat.io/ubi8/httpd-24:1-191
