@@ -16,4 +16,4 @@ spec:
         - name: httpd
           image: ubi8/httpd-24:latest
           ports:
-            - containerPort: 80
+            - containerPort: 8080
