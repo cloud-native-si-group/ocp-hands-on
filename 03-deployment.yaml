@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: workload-2
+  name: httpd-deploy-2
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: workload-2-httpd
+      app: httpd-2
   template:
     metadata:
       labels:
-        app: workload-2-httpd
+        app: httpd-2
     spec:
       containers:
         - name: httpd
