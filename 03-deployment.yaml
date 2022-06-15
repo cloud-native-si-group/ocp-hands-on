@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: workload-2-httpd
+  template:
+    metadata:
+      labels:
+        app: workload-2-httpd
+    spec:
+      containers:
+        - name: httpd
+          image: ubi8/httpd-24:latest
+          ports:
+            - containerPort: 80
