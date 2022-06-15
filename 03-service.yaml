@@ -4,7 +4,7 @@ metadata:
   name: httpd-svc
 spec:
   selector:
-    app: workload-2-httpd
+    app: httpd-2
   ports:
     - port: 80
       targetPort: 8080
